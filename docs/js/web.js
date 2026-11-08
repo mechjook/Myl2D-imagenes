@@ -91,3 +91,43 @@
     })
     .catch(function () { /* se queda el enlace fijo */ });
 })();
+
+// NOVEDADES (2026-11-08): las escribe `scripts/publicar_portable_github.py` del
+// juego en `novedades.json` (las 3 ultimas versiones, sacadas de las notas que
+// ve el jugador al actualizar). Si no carga, quedan las tarjetas del HTML.
+(function () {
+  var contenedor = document.querySelector(".novedades .tarjetas");
+  if (!window.fetch || !contenedor) return;
+  var MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+  function fecha(iso) {
+    var p = String(iso || "").split("-");
+    return p.length === 3 ? (parseInt(p[2], 10) + " " + MESES[parseInt(p[1], 10) - 1] + " " + p[0]) : "";
+  }
+  fetch("novedades.json", { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (datos) {
+      var versiones = (datos && datos.versiones) || [];
+      if (!versiones.length) return;
+      while (contenedor.firstChild) contenedor.removeChild(contenedor.firstChild);
+      versiones.forEach(function (v) {
+        var art = document.createElement("article");
+        art.className = "tarjeta version";
+        var et = document.createElement("p");
+        et.className = "version-et";
+        et.textContent = "Versi\u00f3n " + v.version + (v.fecha ? " \u00b7 " + fecha(v.fecha) : "");
+        art.appendChild(et);
+        var ul = document.createElement("ul");
+        (v.notas || []).forEach(function (n) {
+          var li = document.createElement("li");
+          var b = document.createElement("strong");
+          b.textContent = n.titulo + ": ";
+          li.appendChild(b);
+          li.appendChild(document.createTextNode(n.texto));
+          ul.appendChild(li);
+        });
+        art.appendChild(ul);
+        contenedor.appendChild(art);
+      });
+    })
+    .catch(function () { /* quedan las del HTML */ });
+})();
