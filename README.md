@@ -1,5 +1,11 @@
 # Myl2D - paquetes de imagenes
 
+## Pagina web del juego
+
+**https://mechjook.github.io/Myl2D-imagenes/** -- que es el juego, sus modos,
+preguntas frecuentes y el boton de descarga siempre al dia. La web vive en la
+carpeta `docs/` de este repositorio (GitHub Pages, rama `main`).
+
 ## Descargar el juego
 
 **[Reliquias de Primer Bloque v1.3.0 - portable para Windows (279 MB)](https://github.com/mechjook/Myl2D-imagenes/releases/download/v1.3.0/Myl2D_v1.3.0_portable.zip)**:

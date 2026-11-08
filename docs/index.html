@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b1219">
+<title>Reliquias de Primer Bloque</title>
+<meta name="description" content="Reliquias de Primer Bloque: simulador gratuito para Windows del juego de cartas de Primer Bloque, hecho por fans. Juega contra el bot, la Torre de Ascensión, el tutorial o en línea contra tus amigos.">
+<meta property="og:title" content="Reliquias de Primer Bloque">
+<meta property="og:description" content="Simulador gratuito del juego de cartas de Primer Bloque, hecho por fans. Descárgalo para Windows.">
+<meta property="og:image" content="https://mechjook.github.io/Myl2D-imagenes/img/hero.webp">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<a class="saltar" href="#pestanas">Saltar al contenido</a>
+
+<header class="hero" id="descargar">
+  <img class="hero-fondo" src="img/hero.webp" alt="" width="1774" height="887" fetchpriority="high">
+  <div class="hero-velo"></div>
+  <div class="hero-contenido">
+    <p class="hero-pre">Juego de cartas &middot; reglas del Primer Bloque</p>
+    <h1>Reliquias de Primer Bloque</h1>
+    <p class="hero-lema">El juego de cartas de siempre, en tu ordenador. Arma tu mazo, aprende con el tutorial, sube la Torre de Ascensión y reta a tus amigos en línea.</p>
+
+    <div class="panel-descarga">
+      <a id="boton-descarga" class="boton-griego" href="https://github.com/mechjook/Myl2D-imagenes/releases/download/v1.3.0/Myl2D_v1.3.0_portable.zip">
+        <span class="boton-titulo">Descargar gratis</span>
+        <span class="boton-detalle">Windows &middot; versión <span id="descarga-version">1.3.0</span> &middot; <span id="descarga-tamano">279 MB</span></span>
+      </a>
+      <ol class="pasos-instalar">
+        <li><strong>Descomprime</strong> el archivo .zip en la carpeta que quieras.</li>
+        <li><strong>Abre <code>Myl2D.exe</code></strong>. No hace falta instalar nada.</li>
+        <li>La primera vez eliges la <strong>calidad de las imágenes</strong>. Viene con la Baja; la Media y la Completa se descargan solas desde el juego.</li>
+      </ol>
+      <p class="nota-descarga">Las versiones siguientes llegan como <strong>actualizaciones dentro del juego</strong>: no tienes que volver a descargarlo. <span id="descarga-fecha"></span></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="requisitos" aria-labelledby="titulo-requisitos">
+    <h2 id="titulo-requisitos" class="solo-lector">Requisitos</h2>
+    <ul>
+      <li><span class="req-et">Sistema</span> Windows 10 u 11 de 64 bits</li>
+      <li><span class="req-et">Espacio</span> unos 400 MB con la calidad Baja (más con la Media o la Completa)</li>
+      <li><span class="req-et">Internet</span> opcional: para jugar en línea, la tienda y la cuenta. Sin conexión juegas contra el bot.</li>
+      <li><span class="req-et">Precio</span> gratis, sin anuncios</li>
+    </ul>
+  </section>
+
+  <nav class="pestanas" id="pestanas" aria-label="Secciones">
+    <div role="tablist" aria-label="Qué ofrece el juego" class="lista-pestanas">
+      <button role="tab" id="tab-juego" aria-controls="panel-juego" aria-selected="true"><img src="img/icon_juego.webp" alt="" width="40" height="40"><span>El juego</span></button>
+      <button role="tab" id="tab-modos" aria-controls="panel-modos" aria-selected="false" tabindex="-1"><img src="img/icon_modos.webp" alt="" width="40" height="40"><span>Modos de juego</span></button>
+      <button role="tab" id="tab-mazos" aria-controls="panel-mazos" aria-selected="false" tabindex="-1"><img src="img/icon_mazos.webp" alt="" width="40" height="40"><span>Mazos y cartas</span></button>
+      <button role="tab" id="tab-coleccion" aria-controls="panel-coleccion" aria-selected="false" tabindex="-1"><img src="img/icon_coleccion.webp" alt="" width="40" height="40"><span>Colección y progreso</span></button>
+      <button role="tab" id="tab-cuenta" aria-controls="panel-cuenta" aria-selected="false" tabindex="-1"><img src="img/icon_comunidad.webp" alt="" width="40" height="40"><span>Cuenta y amigos</span></button>
+      <button role="tab" id="tab-calidad" aria-controls="panel-calidad" aria-selected="false" tabindex="-1"><img src="img/icon_calidad.webp" alt="" width="40" height="40"><span>Calidad de imágenes</span></button>
+      <button role="tab" id="tab-faq" aria-controls="panel-faq" aria-selected="false" tabindex="-1"><img src="img/icon_faq.webp" alt="" width="40" height="40"><span>Preguntas frecuentes</span></button>
+    </div>
+  </nav>
+
+  <!-- 1. EL JUEGO -->
+  <section role="tabpanel" id="panel-juego" aria-labelledby="tab-juego" tabindex="0" class="panel">
+    <div class="panel-cabecera">
+      <img src="img/icon_juego.webp" alt="" width="96" height="96">
+      <div>
+        <h2>El juego</h2>
+        <p class="entradilla">Reliquias de Primer Bloque es un simulador del juego de cartas coleccionables con las reglas del <strong>Primer Bloque</strong>, hecho por fans y gratuito. Proteges tu Mazo Castillo y atacas el de tu rival hasta dejarlo sin cartas.</p>
+      </div>
+    </div>
+
+    <figure class="captura">
+      <img src="img/captura_bloqueo.webp" alt="Una partida en curso: el rival ataca y el juego pregunta con qué Aliado bloquear." width="1280" height="720" loading="lazy">
+      <figcaption>Una partida contra el bot: el rival ataca y eliges con qué Aliado bloquear.</figcaption>
+    </figure>
+
+    <h3>El objetivo</h3>
+    <p>Cada jugador tiene un <strong>Mazo Castillo</strong> de 50 cartas, que es a la vez su vida y de donde roba. El daño que recibes se paga botando cartas de tu Castillo al Cementerio. Gana quien deja al rival sin cartas en su Castillo.</p>
+
+    <h3>El turno, fase a fase</h3>
+    <ol class="fases">
+      <li><span class="fase-nombre">Agrupación</span> Los Oros pagados vuelven a tu reserva y los Aliados que atacaron vuelven a la defensa.</li>
+      <li><span class="fase-nombre">Vigilia</span> Lo primero, bajar el Oro del turno. Después juegas Aliados, Armas, Tótems y Talismanes pagando su coste, y usas habilidades.</li>
+      <li><span class="fase-nombre">Batalla Mitológica</span> Declaras atacantes, el rival bloquea, llega la <em>Guerra de Talismanes</em> (una por batalla) y se reparte el daño.</li>
+      <li><span class="fase-nombre">Fase Final</span> Terminan los efectos que duraban hasta el final del turno.</li>
+      <li><span class="fase-nombre">Robar</span> Robas una carta. En este juego <strong>roban todos los turnos, también el primero</strong>, y el límite de mano es de 8 cartas al cerrar tu turno.</li>
+    </ol>
+
+    <h3>Los cinco tipos de carta</h3>
+    <div class="tarjetas">
+      <article class="tarjeta"><h4>Aliado</h4><p>Tus combatientes: atacan, bloquean y son los únicos que dañan el Castillo en combate. Un Aliado recién jugado necesita pasar una Agrupación antes de poder atacar.</p></article>
+      <article class="tarjeta"><h4>Arma</h4><p>Se equipa a un Aliado para darle fuerza o habilidades. Algunas solo las puede portar cierto tipo de Aliado.</p></article>
+      <article class="tarjeta"><h4>Tótem</h4><p>Un permanente de apoyo que se queda en la Línea de Apoyo. No bloquea, pero su efecto dura.</p></article>
+      <article class="tarjeta"><h4>Talismán</h4><p>Un efecto de una sola vez: se juega en tu Vigilia o en la Guerra de Talismanes y después va al Cementerio.</p></article>
+      <article class="tarjeta"><h4>Oro</h4><p>El recurso con el que pagas todo. Bajas uno por turno al empezar la Vigilia. Tu mazo empieza con un Oro Inicial ya en la reserva.</p></article>
+    </div>
+
+    <h3>Las habilidades, de verdad</h3>
+    <p>Las cartas hacen lo que dice su texto: búsquedas en el mazo, anular y cancelar, robar el control, destierros, respuestas en el turno rival y mucho más. Con <strong>clic izquierdo</strong> mueves y atacas; con <strong>clic derecho</strong> activas la habilidad de una carta. Si alguna no hace lo que dice, pulsa <kbd>H</kbd> sobre ella y nos llega el aviso.</p>
+  </section>
+
+  <!-- 2. MODOS -->
+  <section role="tabpanel" id="panel-modos" aria-labelledby="tab-modos" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_modos.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Modos de juego</h2>
+        <p class="entradilla">Solo contra el bot, aprendiendo con el tutorial o contra otra persona por internet o en tu misma casa.</p>
+      </div>
+    </div>
+
+    <div class="tarjetas dos">
+      <article class="tarjeta">
+        <h3>Partida casual contra el bot</h3>
+        <p>Elige tu mazo y el del rival (o uno al azar) y juega contra el bot en cuatro dificultades: <strong>Fácil, Normal, Difícil y Experto</strong>.</p>
+        <p>El bot juega con un ritmo humano: se toma su tiempo antes de responder, guarda Oro para contestar a tus jugadas y en las dificultades bajas comete errores a propósito. En Difícil y Experto elige con cuidado qué hacer en su Vigilia. Puedes pausarlo y cambiar su velocidad.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Torre de Ascensión</h3>
+        <p>Una escalera de rivales: un piso por mazo, del más asequible al más fuerte, que está en la cima. Cada subida empieza con <strong>3 vidas</strong>; ganar te sube un piso y perder o abandonar cuesta una vida. Sin vidas, vuelves al piso 1.</p>
+        <p>Coronar la torre por primera vez en Experto regala el <strong>set Jade iridiscente</strong> completo: ficha, protector, icono, tapete y aura.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Tutorial en siete lecciones</h3>
+        <p>Siete partidas cortas con la mesa ya preparada: <em>El tablero y los Oros, Jugar un Aliado, Atacar, Bloquear, Armas, Tótems y habilidades</em> y <em>Talismanes</em>. Cada lección termina cuando haces la jugada que enseña y se desbloquean en orden.</p>
+        <p>Antes está el <strong>Códice</strong>: láminas ilustradas con cartas reales que explican cada tipo de carta, el tablero y las fases. Y la primera vez que entras, <strong>Clío</strong> te acompaña por el menú y te explica cada zona. El tutorial no cuenta para tu historial ni tus monedas.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>En línea y en red local</h3>
+        <p>Juega contra otra persona <strong>por internet</strong> (el anfitrión recibe un código y el rival lo escribe) o <strong>en la misma red</strong> de tu casa. Cada uno usa su propio mazo y unos dados deciden quién empieza.</p>
+        <p>Si se corta la conexión, la partida se puede <strong>retomar</strong>. Hay <strong>chat</strong> durante la partida y puedes invitar a tus amigos directamente desde el juego.</p>
+        <p>Además del juego con reglas completas existe la <strong>Mesa libre</strong>: una mesa sin reglas automáticas donde cada uno mueve sus cartas a mano, como en la mesa de verdad.</p>
+      </article>
+    </div>
+
+    <figure class="captura">
+      <img src="img/captura_partida.webp" alt="El tablero durante el turno del rival, con el registro de lo que ha jugado." width="1280" height="720" loading="lazy">
+      <figcaption>El turno del rival: a la derecha, el registro de lo que va haciendo; arriba, las fases del turno.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 3. MAZOS -->
+  <section role="tabpanel" id="panel-mazos" aria-labelledby="tab-mazos" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_mazos.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Mazos y cartas</h2>
+        <p class="entradilla">Casi <strong>2.900 cartas</strong> de más de veinte ediciones del Primer Bloque, con sus habilidades, y un constructor que conoce las reglas de cada formato.</p>
+      </div>
+    </div>
+
+    <h3>Siete mazos para empezar</h3>
+    <p>Los mazos oficiales de inicio, uno por raza, listos para jugar:</p>
+    <ul class="chips">
+      <li>Acero y Honor <small>Caballero</small></li>
+      <li>Alas Eternas <small>Dragón</small></li>
+      <li>Fuego y Gloria <small>Héroe</small></li>
+      <li>Relámpago <small>Olímpico</small></li>
+      <li>Sangre Guerrera <small>Defensor</small></li>
+      <li>Sombras Profundas <small>Sombra</small></li>
+      <li>El Pozo de Ptah <small>Eterno</small></li>
+    </ul>
+    <p>Si creas una cuenta nueva empiezas con estos siete y armas el resto a tu gusto.</p>
+
+    <h3>El constructor de mazos</h3>
+    <ul class="lista">
+      <li>Busca y filtra entre todas las cartas, también por raza y por bloque para el formato Racial Edición.</li>
+      <li>Avisa de lo que no vale: copias de más, Cartas Únicas y cartas prohibidas o limitadas.</li>
+      <li>Los formatos <strong>Libre, Racial Libre y Racial Edición</strong>, con sus listas de cartas prohibidas y limitadas de 2026.</li>
+      <li>El Oro Inicial es obligatorio y cuenta como la carta 50: eliges las otras 49.</li>
+      <li>Duplica, renombra y borra mazos; <strong>importa y exporta</strong> listas de mazo en texto y <strong>comparte</strong> un mazo con tus amigos por mensaje.</li>
+    </ul>
+
+    <h3>Ediciones incluidas</h3>
+    <p class="ediciones">Espada Sagrada, Helénica, Hijos de Daana, Dominios de Ra, Cruzadas, Imperio, Tierras Altas, Encrucijada, Colmillos del Inframundo, las ediciones de Aniversario, Leyendas PB 3.0 y 4.0, los Relatos de Hijos de Daana y de Dominios de Ra, Lootbox PB, Toolkit PB 2026, Victoriosas PB 2026 y promociones.</p>
+  </section>
+
+  <!-- 4. COLECCION -->
+  <section role="tabpanel" id="panel-coleccion" aria-labelledby="tab-coleccion" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_coleccion.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Colección y progreso</h2>
+        <p class="entradilla">Cada partida suma: a tu perfil, a tu mazo y a tu colección de objetos para personalizar la mesa.</p>
+      </div>
+    </div>
+
+    <div class="tarjetas dos">
+      <article class="tarjeta">
+        <h3>Perfil, historial y estadísticas</h3>
+        <p>Tu historial guarda cada partida, con la <strong>curva de ventaja</strong> turno a turno. Las estadísticas se ven en general, por mazo, por modo y por dificultad, con tus rachas.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Logros, chapas y niveles</h3>
+        <p>Logros por lo que consigues jugando. Tu perfil gana <strong>chapas</strong> según las partidas que terminas, y cada mazo sube de <strong>nivel hasta el 300</strong> con su propia experiencia.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Tienda y cofres</h3>
+        <p>Gana <strong>monedas</strong> jugando y cámbialas por <strong>llaves</strong> para abrir cofres. Los cofres de colección traen <strong>protectores</strong> (la funda de tus cartas), <strong>fichas</strong> (marcan las habilidades ya usadas en el turno), <strong>tapetes</strong> para la mesa e <strong>iconos</strong> de perfil. El <strong>Cofre Arcano</strong> trae <strong>auras de entrada</strong>: un anillo de luz cuando esa carta entra en juego (hasta 3 por mazo).</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Buzón y misiones</h3>
+        <p>Misiones <strong>diarias, semanales y mensuales</strong> que dan monedas; cuentan las partidas contra el bot en Difícil o Experto y las partidas en línea. Las recompensas y las noticias del juego llegan a tu <strong>buzón</strong>.</p>
+      </article>
+    </div>
+    <p class="nota">La tienda, el buzón y las misiones necesitan conexión. Sin conexión puedes abrir cofres con las llaves que ya tengas, pero no comprar.</p>
+  </section>
+
+  <!-- 5. CUENTA -->
+  <section role="tabpanel" id="panel-cuenta" aria-labelledby="tab-cuenta" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_comunidad.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Cuenta y amigos</h2>
+        <p class="entradilla">Una cuenta gratuita guarda tu progreso y te conecta con otros jugadores. Es opcional: siempre puedes jugar sin conexión.</p>
+      </div>
+    </div>
+
+    <div class="tarjetas dos">
+      <article class="tarjeta">
+        <h3>Tu cuenta</h3>
+        <p>Usuario y contraseña, con un <strong>correo de recuperación</strong>: si olvidas la contraseña, el juego te envía un código de 6 cifras para crear una nueva.</p>
+        <p>Con tu cuenta puedes entrar desde otro ordenador y seguir donde lo dejaste: también recuerda qué lecciones del tutorial ya hiciste.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Amigos y mensajes</h3>
+        <p>Agrega amigos con su <strong>código de amigo</strong>, mira quién está conectado, envíales <strong>mensajes</strong> (aunque no estén en línea), <strong>invítalos a una partida</strong> y comparte tus mazos con ellos.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 6. CALIDAD -->
+  <section role="tabpanel" id="panel-calidad" aria-labelledby="tab-calidad" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_calidad.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Calidad de imágenes</h2>
+        <p class="entradilla">Tú decides cuánto espacio ocupan las cartas. Con menos calidad el juego <strong>carga más rápido</strong> y pesa menos; el texto de las cartas se lee en las tres.</p>
+      </div>
+    </div>
+
+    <div class="comparativa" role="group" aria-label="El Gran Zeus en las tres calidades">
+      <figure><img src="img/zeus_completa.webp" alt="El Gran Zeus en calidad Completa" width="709" height="1016" loading="lazy"><figcaption><strong>Completa</strong><br>las imágenes originales<br><span>616 MB</span></figcaption></figure>
+      <figure><img src="img/zeus_media.webp" alt="El Gran Zeus en calidad Media" width="496" height="711" loading="lazy"><figcaption><strong>Media</strong><br>cartas al 70 %<br><span>271 MB</span></figcaption></figure>
+      <figure><img src="img/zeus_baja.webp" alt="El Gran Zeus en calidad Baja" width="354" height="508" loading="lazy"><figcaption><strong>Baja</strong><br>cartas al 50 %<br><span>incluida en la descarga</span></figcaption></figure>
+    </div>
+
+    <ul class="lista">
+      <li>El juego se descarga con la <strong>Baja</strong>, la más ligera, así que funciona desde el primer momento, también sin internet.</li>
+      <li>La primera vez que lo abres aparece el <strong>recuadro griego</strong> con las tres calidades y El Gran Zeus de ejemplo. Elegir la Baja no descarga nada; elegir otra descarga sus imágenes con una barra de progreso.</li>
+      <li>Puedes <strong>cancelar</strong> la descarga y, cuando vuelvas, sigue donde quedó.</li>
+      <li>Para cambiar más adelante: <strong>Ajustes &rsaquo; Pantalla &rsaquo; Calidad de imágenes</strong>.</li>
+    </ul>
+  </section>
+
+  <!-- 7. FAQ -->
+  <section role="tabpanel" id="panel-faq" aria-labelledby="tab-faq" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_faq.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Preguntas frecuentes</h2>
+        <p class="entradilla">Instalación, actualizaciones y lo que suele preguntarse antes de jugar.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <details open>
+        <summary>¿Cómo lo instalo?</summary>
+        <p>No se instala: descarga el .zip, descomprímelo en cualquier carpeta (por ejemplo en Documentos) y abre <code>Myl2D.exe</code>. Para desinstalarlo basta con borrar la carpeta.</p>
+      </details>
+      <details>
+        <summary>Windows dice que «protegió el equipo». ¿Es normal?</summary>
+        <p>Sí. El juego es un programa gratuito sin firma digital de pago, y Windows SmartScreen avisa con cualquier programa así. Pulsa <strong>«Más información»</strong> y después <strong>«Ejecutar de todas formas»</strong>. Descárgalo siempre desde esta página.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se actualiza?</summary>
+        <p>Solo. Cuando hay una versión nueva, el juego la descarga e instala desde dentro, y al entrar te enseña una ventana con las novedades. No tienes que volver a bajar el .zip.</p>
+      </details>
+      <details>
+        <summary>¿Puedo jugar sin internet?</summary>
+        <p>Sí: contra el bot, la Torre de Ascensión y el tutorial funcionan sin conexión. Internet solo hace falta para jugar en línea, la cuenta, los amigos, la tienda y las misiones.</p>
+      </details>
+      <details>
+        <summary>¿Qué ordenador necesito?</summary>
+        <p>Windows 10 u 11 de 64 bits y unos 400 MB libres con la calidad Baja; la Media y la Completa ocupan más. Puedes cambiar la resolución y el tamaño de la interfaz en Ajustes.</p>
+      </details>
+      <details>
+        <summary>¿Cuesta algo?</summary>
+        <p>No. Es un proyecto de fans sin ánimo de lucro, gratis y sin anuncios. Las monedas de la tienda se ganan jugando.</p>
+      </details>
+      <details>
+        <summary>Una carta no hace lo que dice su texto. ¿Qué hago?</summary>
+        <p>En plena partida, pon el ratón sobre la carta y pulsa <kbd>H</kbd>. Puedes escribir qué esperabas y el aviso nos llega para corregirla.</p>
+      </details>
+      <details>
+        <summary>¿Las reglas son las oficiales?</summary>
+        <p>Sigue las reglas del Primer Bloque y sus aclaraciones, con dos reglas de la casa: todos los turnos se roba (también el primero) y los mazos no tienen un mínimo de Aliados.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="novedades" aria-labelledby="titulo-novedades">
+    <h2 id="titulo-novedades">Novedades</h2>
+    <div class="tarjetas tres">
+      <article class="tarjeta version">
+        <p class="version-et">Versión 1.3.0 &middot; 8 nov 2026</p>
+        <ul>
+          <li><strong>Calidad de imágenes:</strong> elige Completa, Media o Baja; con menos calidad carga más rápido y ocupa menos.</li>
+          <li><strong>Primer arranque:</strong> el juego nuevo viene con la Baja y te deja elegir al abrirlo.</li>
+          <li><strong>Tutorial en tu cuenta:</strong> desde otro ordenador no repites las lecciones que ya hiciste.</li>
+        </ul>
+      </article>
+      <article class="tarjeta version">
+        <p class="version-et">Versión 1.2.25 &middot; 7 nov 2026</p>
+        <ul>
+          <li><strong>Tutorial en siete lecciones</strong> cortas, cada una con la mesa preparada.</li>
+          <li>La jugada que pide cada lección ya no se puede saltar.</li>
+          <li>Botón <strong>«Terminar lección»</strong> para volver al menú.</li>
+        </ul>
+      </article>
+      <article class="tarjeta version">
+        <p class="version-et">Versión 1.2.24 &middot; 7 nov 2026</p>
+        <ul>
+          <li><strong>Clío</strong> recorre el menú contigo la primera vez.</li>
+          <li>133 cartas que usaban la habilidad de otra impresión ahora hacen lo que dice su propio texto.</li>
+          <li>Las Armas respetan quién puede portarlas.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <p class="pie-titulo">Reliquias de Primer Bloque</p>
+  <p><a href="https://github.com/mechjook/Myl2D-imagenes/releases/download/v1.3.0/Myl2D_v1.3.0_portable.zip" id="pie-descarga">Descargar para Windows</a> &middot; <a href="https://github.com/mechjook/Myl2D-imagenes/releases">Todas las versiones</a></p>
+  <p class="aviso">Proyecto de fans sin ánimo de lucro. Las ilustraciones de las cartas pertenecen a sus autores y a Salo S.A.</p>
+  <p class="aviso">Esta página no usa cookies, rastreadores ni analítica.</p>
+</footer>
+
+<script src="js/web.js"></script>
+</body>
+</html>
