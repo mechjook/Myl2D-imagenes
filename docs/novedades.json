@@ -1,6 +1,38 @@
 {
   "versiones": [
     {
+      "version": "1.3.4",
+      "fecha": "2026-11-09",
+      "notas": [
+        {
+          "titulo": "Torres de tres alturas",
+          "texto": "Ahora hay tres torres para elegir: la Atalaya de 5 pisos, la Ciudadela de 10 y la Torre de Ascension de 15. Cada una guarda tu progreso y tiene logros nuevos."
+        },
+        {
+          "titulo": "Carta ampliada con la tecla V",
+          "texto": "Con la tecla V cambias la vista de la carta ampliada: Completa, Solo la habilidad, Solo el recuadro o Sin recuadros. Tambien esta en Ajustes, Partida."
+        },
+        {
+          "titulo": "Imagenes mas rapidas",
+          "texto": "Descargar e instalar las imagenes de otra calidad ahora es bastante mas rapido."
+        },
+        {
+          "titulo": "Armas del bot",
+          "texto": "El bot ya no equipa mas de un Arma a un mismo Aliado, salvo que el texto de la carta lo permita."
+        }
+      ]
+    },
+    {
+      "version": "1.3.3",
+      "fecha": "2026-11-08",
+      "notas": [
+        {
+          "titulo": "Calidad de imagenes sin esperas",
+          "texto": "Al elegir otra calidad de imagenes, en cuanto termina la descarga se instala sola, sin pulsar nada. Si cierras el juego a mitad, la instalacion se termina al volver a abrirlo."
+        }
+      ]
+    },
+    {
       "version": "1.3.2",
       "fecha": "2026-11-08",
       "notas": [
@@ -15,42 +47,6 @@
         {
           "titulo": "Bonos de fuerza en la mesa",
           "texto": "El numero que se suma a la fuerza de un Aliado (como \"+2\" en verde o \"-1\" en rojo) ahora sale a la derecha de la fuerza de la carta, mas grande y con letra del juego. Ya no tapa la fuerza base."
-        }
-      ]
-    },
-    {
-      "version": "1.3.1",
-      "fecha": "2026-11-08",
-      "notas": [
-        {
-          "titulo": "Recuperar la contrasena",
-          "texto": "Si olvidaste tu contrasena, pulsa \"Olvide mi contrasena\" en la pantalla de iniciar sesion y escribe tu usuario. Te llega una clave de 6 cifras al correo de recuperacion que pusiste al crear la cuenta; vale 15 minutos y con ella eliges una contrasena nueva."
-        },
-        {
-          "titulo": "Si la clave no llega",
-          "texto": "En esa misma pantalla puedes pedir que te la vuelvan a enviar, y mira tambien la carpeta de spam. Al cambiar la contrasena entras directo, y por seguridad se cierra tu sesion en otros ordenadores."
-        }
-      ]
-    },
-    {
-      "version": "1.3.0",
-      "fecha": "2026-11-08",
-      "notas": [
-        {
-          "titulo": "Calidad de imagenes",
-          "texto": "Ahora puedes elegir la calidad de las imagenes de las cartas: Completa, Media o Baja, con El Gran Zeus de ejemplo. Con menos calidad el juego carga mas rapido y ocupa menos espacio. Lo encuentras en Ajustes, Pantalla, \"Calidad de imagenes\"."
-        },
-        {
-          "titulo": "Cambiar de calidad",
-          "texto": "Al elegir otra calidad, el juego descarga sus imagenes. Puedes cancelar y, cuando vuelvas, sigue donde quedo. Si ya tenias el juego, sigues con la Completa y no te preguntamos nada."
-        },
-        {
-          "titulo": "Primer arranque del juego nuevo",
-          "texto": "Si instalas el juego desde cero, al abrirlo por primera vez te deja elegir la calidad de las imagenes. Viene con la Baja, la mas ligera."
-        },
-        {
-          "titulo": "Tutorial y menu en tu cuenta",
-          "texto": "El tutorial y la explicacion del menu ahora se guardan en tu cuenta. Si entras desde otro ordenador, no te sale otra vez la explicacion ni repites las lecciones que ya hiciste."
         }
       ]
     }
