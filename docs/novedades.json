@@ -1,6 +1,44 @@
 {
   "versiones": [
     {
+      "version": "1.3.5",
+      "fecha": "2026-11-10",
+      "notas": [
+        {
+          "titulo": "Abandonar una partida",
+          "texto": "Al pulsar Volver en plena partida sale una ventana que pregunta antes de salir. Abandonar cuenta como derrota: online gana el rival y en la Torre pierdes una vida. Puedes elegir Volver a la partida."
+        },
+        {
+          "titulo": "Reportes de cartas con la tecla H",
+          "texto": "Tus reportes se envian solos al terminar cada partida, ya no hace falta ir a Ajustes. Al empezar la partida sale un aviso que te recuerda la tecla H, con una casilla para que no vuelva a salir."
+        },
+        {
+          "titulo": "Aliados y Armas",
+          "texto": "Ya no se puede jugar ni mover un Aliado a la Linea de Apoyo, ni pasar un Arma equipada de un Aliado a otro, salvo que su habilidad lo diga, como Lanza de la Victoria."
+        },
+        {
+          "titulo": "Copia del campo rival",
+          "texto": "La copia pequena del campo del rival, el ojo rojo debajo del ojo, ahora viene encendida. Se apaga con el mismo boton Rival."
+        },
+        {
+          "titulo": "Tutorial y guia del menu",
+          "texto": "El Codice tiene un apartado nuevo, Vistas y ajustes, que explica las formas de ver la mesa, las teclas y lo que hay en Ajustes. Y Clio ya no vuelve a salir una y otra vez cuando juegas sin conexion."
+        },
+        {
+          "titulo": "Partida por nivel",
+          "texto": "En Partida local hay un nuevo modo: eliges un nivel y el juego escoge rival y dificultad del bot. Facil y Media te enfrentan a un mazo preconstruido; Dificil y Experto, a mazos de torneo."
+        },
+        {
+          "titulo": "La Atalaya, con mazos preconstruidos",
+          "texto": "La torre de 5 pisos ahora se juega solo contra mazos preconstruidos, ordenados del mas facil al mas dificil: la mejor forma de empezar a subir torres."
+        },
+        {
+          "titulo": "Carta ampliada mas discreta",
+          "texto": "Al pasar el raton por una carta ahora sale solo el recuadro con su texto, sin tapar la mesa. Con la tecla V vuelves a la vista completa o eliges otra."
+        }
+      ]
+    },
+    {
       "version": "1.3.4",
       "fecha": "2026-11-09",
       "notas": [
@@ -29,24 +67,6 @@
         {
           "titulo": "Calidad de imagenes sin esperas",
           "texto": "Al elegir otra calidad de imagenes, en cuanto termina la descarga se instala sola, sin pulsar nada. Si cierras el juego a mitad, la instalacion se termina al volver a abrirlo."
-        }
-      ]
-    },
-    {
-      "version": "1.3.2",
-      "fecha": "2026-11-08",
-      "notas": [
-        {
-          "titulo": "Tutorial: Siguiente leccion",
-          "texto": "Al terminar cada leccion del tutorial salen dos botones: \"Volver al menu\" y \"Siguiente leccion\", que te lleva directo a la siguiente sin pasar por el menu. En la ultima leccion solo sale \"Volver al menu\"."
-        },
-        {
-          "titulo": "Tutorial: Deshacer y Reiniciar",
-          "texto": "Durante el tutorial, \"Deshacer\" y \"Volver\" funcionan siempre, aunque el recuadro te pida una jugada. Ya no te quedas atascado si una carta acaba donde no toca, y el recuadro tiene un boton \"Reiniciar\" para empezar la leccion de nuevo."
-        },
-        {
-          "titulo": "Bonos de fuerza en la mesa",
-          "texto": "El numero que se suma a la fuerza de un Aliado (como \"+2\" en verde o \"-1\" en rojo) ahora sale a la derecha de la fuerza de la carta, mas grande y con letra del juego. Ya no tapa la fuerza base."
         }
       ]
     }
