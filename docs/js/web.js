@@ -128,6 +128,34 @@
         art.appendChild(ul);
         contenedor.appendChild(art);
       });
+      // HISTORIAL DE ACTUALIZACIONES (2026-11-12): todas las anteriores, en un
+      // desplegable debajo de las tarjetas.
+      var historial = (datos && datos.historial) || [];
+      var plegable = document.querySelector(".historial-versiones");
+      var lista = plegable && plegable.querySelector(".historial-lista");
+      if (!historial.length || !lista) return;
+      historial.forEach(function (v) {
+        var bloque = document.createElement("div");
+        bloque.className = "version";
+        var et = document.createElement("p");
+        et.className = "version-et";
+        et.textContent = "Versión " + v.version + (v.fecha ? " · " + fecha(v.fecha) : "");
+        bloque.appendChild(et);
+        var ul = document.createElement("ul");
+        (v.notas || []).forEach(function (n) {
+          var li = document.createElement("li");
+          var b = document.createElement("strong");
+          b.textContent = n.titulo + ": ";
+          li.appendChild(b);
+          li.appendChild(document.createTextNode(n.texto));
+          ul.appendChild(li);
+        });
+        bloque.appendChild(ul);
+        lista.appendChild(bloque);
+      });
+      plegable.querySelector("summary").textContent =
+        "Historial de actualizaciones (" + historial.length + " versiones anteriores)";
+      plegable.hidden = false;
     })
     .catch(function () { /* quedan las del HTML */ });
 })();

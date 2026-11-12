@@ -250,6 +250,22 @@ main { max-width: var(--ancho); margin: 0 auto; padding: 0 16px; }
 .version li { margin-bottom: .35rem; }
 .version li::marker { color: var(--oro); }
 
+/* HISTORIAL DE ACTUALIZACIONES (2026-11-12): todas las versiones anteriores a
+   las tres tarjetas, plegadas para no alargar la pagina. */
+.historial-versiones {
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio);
+  margin-top: 1.2rem; padding: 0 1.1rem;
+}
+.historial-versiones summary {
+  cursor: pointer; padding: .9rem 0; font-family: var(--serif-titulo); font-weight: 700; color: var(--oro-claro);
+  font-size: 1.02rem; list-style: none; position: relative; padding-right: 1.8rem;
+}
+.historial-versiones summary::-webkit-details-marker { display: none; }
+.historial-versiones summary::after { content: "+"; position: absolute; right: 0; top: .75rem; font-size: 1.3rem; color: var(--oro); }
+.historial-versiones[open] summary::after { content: "\2212"; }
+.historial-lista { padding-bottom: .6rem; }
+.historial-lista .version { border-top: 1px solid var(--borde); padding-top: .8rem; }
+
 .pie {
   border-top: 2px solid var(--oro-oscuro);
   background: #070c11; text-align: center; padding: 2rem 16px 2.5rem;

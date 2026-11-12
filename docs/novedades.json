@@ -94,5 +94,233 @@
         }
       ]
     }
+  ],
+  "historial": [
+    {
+      "version": "1.3.3",
+      "fecha": "2026-11-08",
+      "notas": [
+        {
+          "titulo": "Calidad de imagenes sin esperas",
+          "texto": "Al elegir otra calidad de imagenes, en cuanto termina la descarga se instala sola, sin pulsar nada. Si cierras el juego a mitad, la instalacion se termina al volver a abrirlo."
+        }
+      ]
+    },
+    {
+      "version": "1.3.2",
+      "fecha": "2026-11-08",
+      "notas": [
+        {
+          "titulo": "Tutorial: Siguiente leccion",
+          "texto": "Al terminar cada leccion del tutorial salen dos botones: \"Volver al menu\" y \"Siguiente leccion\", que te lleva directo a la siguiente sin pasar por el menu. En la ultima leccion solo sale \"Volver al menu\"."
+        },
+        {
+          "titulo": "Tutorial: Deshacer y Reiniciar",
+          "texto": "Durante el tutorial, \"Deshacer\" y \"Volver\" funcionan siempre, aunque el recuadro te pida una jugada. Ya no te quedas atascado si una carta acaba donde no toca, y el recuadro tiene un boton \"Reiniciar\" para empezar la leccion de nuevo."
+        },
+        {
+          "titulo": "Bonos de fuerza en la mesa",
+          "texto": "El numero que se suma a la fuerza de un Aliado (como \"+2\" en verde o \"-1\" en rojo) ahora sale a la derecha de la fuerza de la carta, mas grande y con letra del juego. Ya no tapa la fuerza base."
+        }
+      ]
+    },
+    {
+      "version": "1.3.1",
+      "fecha": "2026-11-08",
+      "notas": [
+        {
+          "titulo": "Recuperar la contrasena",
+          "texto": "Si olvidaste tu contrasena, pulsa \"Olvide mi contrasena\" en la pantalla de iniciar sesion y escribe tu usuario. Te llega una clave de 6 cifras al correo de recuperacion que pusiste al crear la cuenta; vale 15 minutos y con ella eliges una contrasena nueva."
+        },
+        {
+          "titulo": "Si la clave no llega",
+          "texto": "En esa misma pantalla puedes pedir que te la vuelvan a enviar, y mira tambien la carpeta de spam. Al cambiar la contrasena entras directo, y por seguridad se cierra tu sesion en otros ordenadores."
+        }
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "fecha": "2026-11-08",
+      "notas": [
+        {
+          "titulo": "Calidad de imagenes",
+          "texto": "Ahora puedes elegir la calidad de las imagenes de las cartas: Completa, Media o Baja, con El Gran Zeus de ejemplo. Con menos calidad el juego carga mas rapido y ocupa menos espacio. Lo encuentras en Ajustes, Pantalla, \"Calidad de imagenes\"."
+        },
+        {
+          "titulo": "Cambiar de calidad",
+          "texto": "Al elegir otra calidad, el juego descarga sus imagenes. Puedes cancelar y, cuando vuelvas, sigue donde quedo. Si ya tenias el juego, sigues con la Completa y no te preguntamos nada."
+        },
+        {
+          "titulo": "Primer arranque del juego nuevo",
+          "texto": "Si instalas el juego desde cero, al abrirlo por primera vez te deja elegir la calidad de las imagenes. Viene con la Baja, la mas ligera."
+        },
+        {
+          "titulo": "Tutorial y menu en tu cuenta",
+          "texto": "El tutorial y la explicacion del menu ahora se guardan en tu cuenta. Si entras desde otro ordenador, no te sale otra vez la explicacion ni repites las lecciones que ya hiciste."
+        }
+      ]
+    },
+    {
+      "version": "1.2.25",
+      "fecha": "2026-11-07",
+      "notas": [
+        {
+          "titulo": "Tutorial en siete lecciones",
+          "texto": "El tutorial ahora son siete lecciones cortas: El tablero y los Oros, Jugar un Aliado, Atacar, Bloquear, Armas, Totems y habilidades, y Talismanes. Cada una es una partida corta con la mesa ya preparada y termina cuando haces lo que ensena."
+        },
+        {
+          "titulo": "Terminar leccion",
+          "texto": "Cada leccion tiene un boton \"Terminar leccion\" que te devuelve al menu al acabarla. En el menu las lecciones se ven en dos columnas."
+        },
+        {
+          "titulo": "Jugada obligatoria",
+          "texto": "La jugada que pide cada leccion ya no se puede saltar. Antes, en la leccion de amenazas, podias no bajar el Oro y quedarte sin Oros para el Totem."
+        },
+        {
+          "titulo": "Lecciones por desbloquear",
+          "texto": "Como las lecciones son nuevas, se desbloquean otra vez en orden, despues del Codice."
+        }
+      ]
+    },
+    {
+      "version": "1.2.24",
+      "fecha": "2026-11-07",
+      "notas": [
+        {
+          "titulo": "Recorrido del menu con Clio",
+          "texto": "Si eres un jugador nuevo, Clio te acompana por el menu: ilumina cada zona y te explica para que sirve. Sale una sola vez. Ademas, las pestanas y los botones del menu se iluminan en dorado al pasar el raton."
+        },
+        {
+          "titulo": "Cartas que ahora hacen lo que dicen",
+          "texto": "Revisamos las cartas permitidas y vigentes: 133 cartas usaban la habilidad de otra impresion y ahora hacen lo que dice su propio texto. 30 cartas de Relatos de Dominios de Ra que no hacian nada ya funcionan, y 8 de Leyendas 3.0 ya muestran su texto."
+        },
+        {
+          "titulo": "Armas y quien las porta",
+          "texto": "Las Armas respetan quien puede portarlas: \"solo puede ser portada por\" y \"su portador debe ser un\" se cumplen, y los Aliados que no pueden portar armas ya no las aceptan (Excalibur, Espada del Abismo, Gae Bolga, Sir Wesley). El Tridente de los Mares ya da su +4."
+        },
+        {
+          "titulo": "Rey Arturo y Totem de Bossus",
+          "texto": "Rey Arturo Pendragon hace botar 2 cartas al rival en cada Fase de Agrupacion, la tuya y la del rival, sin que tengas que hacer nada. Totem de Bossus hace desterrar una carta del Cementerio rival en cada Agrupacion."
+        },
+        {
+          "titulo": "La Odisea y Gran Guardian",
+          "texto": "La Odisea reparte ahora las tres cartas: una a la Mano, una al Cementerio y otra al destierro. Gran Guardian, despues de anular, te deja desterrar otra carta del mismo tipo del Cementerio rival."
+        },
+        {
+          "titulo": "Tadg el Druida y Druida Tlachtga",
+          "texto": "Tadg el Druida solo deja coger un Oro o un Aliado Druida. Druida Tlachtga solo deja coger un Aliado, como dicen sus textos."
+        },
+        {
+          "titulo": "Cartas corregidas",
+          "texto": "Exilio ahora destierra. Las Tres Plagas ya no destruye gratis y Wepwawet pide su condicion y coste. Espada Dragon solo se usa en la Vigilia. Espada Dentada da +2 si la porta un Dragon y +1 si la porta otro Aliado. Kay y Nereidas solo atacan si se cumple su condicion."
+        },
+        {
+          "titulo": "Mas cartas corregidas",
+          "texto": "Skatcha gana 2 a la fuerza si Cuchulain esta en juego. Hacha Ligera y Sandalias de Hermes dejan atacar al entrar. El descarte obligatorio de Sir Owen ya no se puede cancelar."
+        }
+      ]
+    },
+    {
+      "version": "1.2.23",
+      "fecha": "2026-11-07",
+      "notas": [
+        {
+          "titulo": "Guia del Codice mas clara",
+          "texto": "Los textos de la guia del Codice ahora van en recuadros grandes, tres por pantalla, que aparecen de uno en uno. Pulsa Siguiente para ver los siguientes."
+        }
+      ]
+    },
+    {
+      "version": "1.2.22",
+      "fecha": "2026-11-07",
+      "notas": [
+        {
+          "titulo": "El Codice y las lecciones ya se ven",
+          "texto": "En la version anterior el Codice salia vacio y las lecciones del tutorial no aparecian. Ya puedes ver todas sus laminas y, al terminarlo, empezar la primera leccion."
+        }
+      ]
+    },
+    {
+      "version": "1.2.21",
+      "fecha": "2026-11-07",
+      "notas": [
+        {
+          "titulo": "Modo Tutorial",
+          "texto": "En Jugar, Partida local, hay un nuevo boton \"Tutorial\" con tres lecciones que se desbloquean en orden: Juego basico, Amenazas y proteccion, y Guerra de Talismanes. Cada una es una partida de verdad contra un rival tranquilo, siempre con el mismo reparto de cartas."
+        },
+        {
+          "titulo": "Durante las lecciones",
+          "texto": "Un recuadro te explica cada paso e ilumina la zona de la que habla. La partida espera mientras lees y, si haces clic donde no toca, te avisa de lo que hay que hacer. Puedes saltar un paso o salir cuando quieras."
+        },
+        {
+          "titulo": "El Codice",
+          "texto": "Laminas ilustradas con cartas reales explican cada tipo de carta, el tablero, las fases del turno y una guia del juego. Hay que verlo entero para abrir la primera leccion, y puedes volver a abrirlo cuando quieras, tambien desde una leccion."
+        },
+        {
+          "titulo": "Sin efecto en tu progreso",
+          "texto": "Las partidas del tutorial no cuentan para el historial, las estadisticas ni las monedas, asi que puedes practicar sin miedo."
+        }
+      ]
+    },
+    {
+      "version": "1.2.20",
+      "fecha": "2026-11-07",
+      "notas": [
+        {
+          "titulo": "Apertura de cofres",
+          "texto": "Abrir cofres, tambien de a diez o veinte, va mucho mas fluido y sin tirones. Ya no aparece el recuadro negro detras del cofre y ninguna tarjeta de premio sale vacia."
+        },
+        {
+          "titulo": "Premios por categorias",
+          "texto": "Los premios salen categoria por categoria: Protectores, Fichas, Tapetes e Iconos, con una pausa entre ellas. Dentro de cada una van del mas comun al mas raro, y cada categoria termina con su mejor premio."
+        },
+        {
+          "titulo": "Mostrar todos los premios",
+          "texto": "Si haces clic mientras van saliendo los premios, aparecen todos de una vez. El siguiente clic cierra la apertura."
+        },
+        {
+          "titulo": "Lista de premios al abrir muchos",
+          "texto": "Al abrir muchos cofres, la lista baja sola para que veas lo que va saliendo. Si usas la rueda del raton, la lista deja de moverse sola."
+        }
+      ]
+    },
+    {
+      "version": "1.2.19",
+      "fecha": "2026-11-06",
+      "notas": [
+        {
+          "titulo": "Novedades al actualizar",
+          "texto": "Cada vez que el juego se actualice, al entrar veras esta ventana con lo que cambio, contado en pocas palabras. Sale una sola vez por actualizacion."
+        },
+        {
+          "titulo": "Set Jade de la Torre",
+          "texto": "Coronar la Torre de Ascension por primera vez en dificultad Experto te regala el set Jade iridiscente completo: ficha, protector, icono, tapete y aura. Es un premio exclusivo, asi que ya no sale en los cofres ni se puede canjear."
+        },
+        {
+          "titulo": "Mazos preconstruidos nuevos",
+          "texto": "Hay siete mazos oficiales listos para jugar, uno por raza: Acero y Honor, Alas Eternas, Sangre Guerrera, Sombras Profundas, El Pozo de Ptah, Fuego y Gloria y Relampago."
+        },
+        {
+          "titulo": "Cuenta nueva",
+          "texto": "Si creas una cuenta nueva, empiezas solo con los mazos preconstruidos y armas el resto a tu gusto. Quien ya jugaba conserva todos sus mazos."
+        },
+        {
+          "titulo": "Cartas corregidas",
+          "texto": "Muchas cartas de Espada Sagrada, Helenica, Hijos de Daana y Dominios de Ra ahora hacen lo que dice su texto, sin dar ventajas gratis. Por ejemplo: Dardos de Montu, Rey Arturo Pendragon, Espada de Guardian, Hijos de Lir y Psyche."
+        },
+        {
+          "titulo": "Armas de Espada Sagrada",
+          "texto": "Caballo de Batalla, Espada Corta, Alabarda y otras Armas de Espada Sagrada ahora cuentan como Armas y ya no como Totem."
+        },
+        {
+          "titulo": "Druida Maldito",
+          "texto": "La perdida de fuerza que causa al entrar en juego ahora dura hasta el final del turno, ya no es permanente."
+        },
+        {
+          "titulo": "Escudo de Atenea",
+          "texto": "Ya no devuelve cualquier habilidad del rival, porque solo debe hacerlo cuando afecta a su portador. Por ahora queda sin efecto."
+        }
+      ]
+    }
   ]
 }
