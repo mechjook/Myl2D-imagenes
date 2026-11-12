@@ -1,6 +1,40 @@
 {
   "versiones": [
     {
+      "version": "1.3.6",
+      "fecha": "2026-11-12",
+      "notas": [
+        {
+          "titulo": "Clio narra las jugadas del rival",
+          "texto": "Clio, la Cronista, aparece junto al campo del rival y cuenta con un globo de dialogo lo que hace, con flechas y brillo sobre las cartas afectadas. Cada frase se deja leer antes de la siguiente, y en tu turno sale un subtitulo sobre la mano. Se apaga en Ajustes, Partida, opcion Narrador."
+        },
+        {
+          "titulo": "Velocidad del bot",
+          "texto": "Hay dos velocidades nuevas, mas lentas: Muy lenta y Pausada. Las eliges en Ajustes, Partida, en la rueda dentada de la partida y en los botones del panel del rival."
+        },
+        {
+          "titulo": "Reloj de la partida online",
+          "texto": "Ahora cada turno online dura 1 minuto por defecto. El contador queda fijo bajo Volver, cambia de color segun se acaba el tiempo y en los ultimos 10 segundos hay una cuenta atras bien visible."
+        },
+        {
+          "titulo": "Constructor de mazos",
+          "texto": "La casilla Solo vigentes viene marcada y oculta las versiones viejas o prohibidas. Cada carta tiene ahora un boton de diseno para elegir su imagen, su edicion y su ano."
+        },
+        {
+          "titulo": "Protectores de Espada Sagrada",
+          "texto": "Los protectores de Espada Sagrada tienen un dibujo nuevo, rehecho por completo, y el frente del protector de Helenica Bronce tambien se ve mejor."
+        },
+        {
+          "titulo": "Iconos de logros",
+          "texto": "Los logros Erosion, Contrarreloj y Relampago ya muestran su icono en vez de salir en blanco."
+        },
+        {
+          "titulo": "Actualizaciones mas rapidas",
+          "texto": "Si una actualizacion no trae imagenes nuevas, el juego ya no vuelve a cargar todas las imagenes al entrar. Ademas, cuando hay una actualizacion, te lo pregunta antes de cargarlas."
+        }
+      ]
+    },
+    {
       "version": "1.3.5",
       "fecha": "2026-11-10",
       "notas": [
@@ -57,16 +91,6 @@
         {
           "titulo": "Armas del bot",
           "texto": "El bot ya no equipa mas de un Arma a un mismo Aliado, salvo que el texto de la carta lo permita."
-        }
-      ]
-    },
-    {
-      "version": "1.3.3",
-      "fecha": "2026-11-08",
-      "notas": [
-        {
-          "titulo": "Calidad de imagenes sin esperas",
-          "texto": "Al elegir otra calidad de imagenes, en cuanto termina la descarga se instala sola, sin pulsar nada. Si cierras el juego a mitad, la instalacion se termina al volver a abrirlo."
         }
       ]
     }
