@@ -128,14 +128,13 @@
         art.appendChild(ul);
         contenedor.appendChild(art);
       });
-      // HISTORIAL DE ACTUALIZACIONES (2026-11-12): todas las anteriores, en un
-      // desplegable debajo de las tarjetas.
-      var historial = (datos && datos.historial) || [];
-      var plegable = document.querySelector(".historial-versiones");
-      var lista = plegable && plegable.querySelector(".historial-lista");
-      if (!historial.length || !lista) return;
-      historial.forEach(function (v) {
-        var bloque = document.createElement("div");
+      // ACTUALIZACIONES (2026-11-12): la pestana aparte con TODAS las
+      // versiones (las 3 de arriba y el historial).
+      var lista = document.querySelector("#panel-actualizaciones .historial-lista");
+      if (!lista) return;
+      while (lista.firstChild) lista.removeChild(lista.firstChild);
+      versiones.concat((datos && datos.historial) || []).forEach(function (v) {
+        var bloque = document.createElement("article");
         bloque.className = "version";
         var et = document.createElement("p");
         et.className = "version-et";
@@ -153,9 +152,6 @@
         bloque.appendChild(ul);
         lista.appendChild(bloque);
       });
-      plegable.querySelector("summary").textContent =
-        "Historial de actualizaciones (" + historial.length + " versiones anteriores)";
-      plegable.hidden = false;
     })
     .catch(function () { /* quedan las del HTML */ });
 })();

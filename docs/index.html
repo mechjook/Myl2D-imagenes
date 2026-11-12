@@ -63,6 +63,7 @@
       <button role="tab" id="tab-cuenta" aria-controls="panel-cuenta" aria-selected="false" tabindex="-1"><img src="img/icon_comunidad.webp" alt="" width="40" height="40"><span>Cuenta y amigos</span></button>
       <button role="tab" id="tab-calidad" aria-controls="panel-calidad" aria-selected="false" tabindex="-1"><img src="img/icon_calidad.webp" alt="" width="40" height="40"><span>Calidad de imágenes</span></button>
       <button role="tab" id="tab-faq" aria-controls="panel-faq" aria-selected="false" tabindex="-1"><img src="img/icon_faq.webp" alt="" width="40" height="40"><span>Preguntas frecuentes</span></button>
+      <button role="tab" id="tab-actualizaciones" aria-controls="panel-actualizaciones" aria-selected="false" tabindex="-1"><img src="img/icon_calidad.webp" alt="" width="40" height="40"><span>Actualizaciones</span></button>
     </div>
   </nav>
 
@@ -306,6 +307,21 @@
     </div>
   </section>
 
+  <!-- ACTUALIZACIONES (2026-11-12, pedido del usuario): el historial COMPLETO,
+       aparte de las 3 ultimas del inicio. Lo rellena web.js con novedades.json. -->
+  <section role="tabpanel" id="panel-actualizaciones" aria-labelledby="tab-actualizaciones" tabindex="0" class="panel" hidden>
+    <div class="panel-cabecera">
+      <img src="img/icon_calidad.webp" alt="" width="96" height="96">
+      <div>
+        <h2>Actualizaciones</h2>
+        <p class="entradilla">Todo lo que ha cambiado en cada versión, de la más nueva a la más antigua. El juego se actualiza solo desde dentro.</p>
+      </div>
+    </div>
+    <div class="historial-lista">
+      <p>Cargando el historial…</p>
+    </div>
+  </section>
+
   <section class="novedades" aria-labelledby="titulo-novedades">
     <h2 id="titulo-novedades">Novedades</h2>
     <div class="tarjetas tres">
@@ -333,10 +349,7 @@
         </ul>
       </article>
     </div>
-    <details class="historial-versiones" hidden>
-      <summary>Historial de actualizaciones</summary>
-      <div class="historial-lista"></div>
-    </details>
+    <p class="ver-todas"><a href="#actualizaciones" id="ver-todas-actualizaciones">Ver todas las actualizaciones</a></p>
   </section>
 </main>
 
