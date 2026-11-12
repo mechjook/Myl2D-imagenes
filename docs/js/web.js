@@ -17,6 +17,19 @@
     if (actualizarHash && history.replaceState) {
       history.replaceState(null, "", "#" + tab.id.replace(/^tab-/, ""));
     }
+    if (actualizarHash) subirAlPanel(document.getElementById(tab.getAttribute("aria-controls")));
+  }
+
+  // AL CAMBIAR DE PESTANA SE VE EL PRINCIPIO DEL PANEL (2026-11-12, pedido del
+  // usuario): la barra de pestanas es fija, asi que desde abajo de un panel
+  // largo el siguiente (corto) quedaba por encima de la vista. Si el panel
+  // empieza por encima del borde inferior de la barra, se sube hasta ahi.
+  function subirAlPanel(panel) {
+    if (!panel) return;
+    var nav = document.getElementById("pestanas");
+    var alto = nav ? nav.getBoundingClientRect().height : 0;
+    var arriba = panel.getBoundingClientRect().top;
+    if (arriba < alto) window.scrollBy(0, arriba - alto - 8);
   }
 
   tabs.forEach(function (tab, i) {
