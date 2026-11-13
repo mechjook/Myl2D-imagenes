@@ -133,21 +133,26 @@ main { max-width: var(--ancho); margin: 0 auto; padding: 0 16px; }
 
 /* ---------- PESTANAS ---------- */
 .pestanas { margin: 3rem 0 0; position: sticky; top: 0; z-index: 5; background: linear-gradient(180deg, var(--fondo) 85%, transparent); padding: .6rem 0 .8rem; }
+/* ESCRITORIO (2026-11-12, pedido del usuario): las 8 pestanas en una REJILLA
+   de 4 x 2, todas a la vista y del mismo ancho, sin barra de desplazamiento.
+   En el movil (abajo) siguen en una tira que se desliza con el dedo. */
 .lista-pestanas {
-  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin;
-  border-bottom: 1px solid var(--oro-oscuro); padding-bottom: 0;
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px;
+  border-bottom: 1px solid var(--oro-oscuro); padding-bottom: 8px;
 }
 .lista-pestanas [role="tab"] {
-  flex: 0 0 auto;
-  display: flex; align-items: center; gap: .5rem;
-  font: 600 .95rem var(--serif-titulo); letter-spacing: .03em;
+  min-width: 0;
+  display: flex; align-items: center; gap: .55rem;
+  font: 600 .95rem var(--serif-titulo); letter-spacing: .03em; text-align: left;
   color: var(--texto-suave);
   background: var(--superficie);
-  border: 1px solid var(--borde); border-bottom: none;
-  border-radius: var(--radio) var(--radio) 0 0;
-  padding: .45rem .9rem .45rem .5rem; cursor: pointer;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: .4rem .8rem .4rem .45rem; cursor: pointer;
   transition: color .15s, background .15s;
 }
+.lista-pestanas [role="tab"] span { line-height: 1.2; }
+.lista-pestanas [role="tab"] img { flex: 0 0 auto; }
 .lista-pestanas [role="tab"] img { width: 34px; height: 34px; border-radius: 50%; opacity: .75; }
 .lista-pestanas [role="tab"]:hover { color: var(--oro-claro); background: var(--superficie-2); }
 .lista-pestanas [role="tab"][aria-selected="true"] {
@@ -264,6 +269,13 @@ main { max-width: var(--ancho); margin: 0 auto; padding: 0 16px; }
 .pie-titulo { font-family: var(--serif-titulo); color: var(--oro-claro); font-size: 1.2rem; letter-spacing: .06em; }
 .pie .aviso { color: var(--texto-suave); font-size: .98rem; margin: .3rem 0; }
 
+/* Pantallas medianas: la rejilla de pestanas con letra e icono algo menores,
+   para que "Actualizaciones" quepa en su celda. */
+@media (min-width: 721px) and (max-width: 1000px) {
+  .lista-pestanas [role="tab"] { font-size: .8rem; gap: .4rem; padding: .35rem .5rem .35rem .35rem; letter-spacing: .01em; }
+  .lista-pestanas [role="tab"] img { width: 28px; height: 28px; }
+}
+
 /* ---------- MOVIL ---------- */
 @media (max-width: 720px) {
   body { font-size: 1.08rem; }
@@ -272,7 +284,9 @@ main { max-width: var(--ancho); margin: 0 auto; padding: 0 16px; }
   .hero-contenido { padding: 2.5rem 16px 3rem; }
   .panel-descarga { padding: 1.2rem 1rem 1rem; }
   .boton-griego { padding: 10px 18px; border-width: 18px 34px; border-image-width: 18px 34px; min-height: 92px; }
-  .lista-pestanas [role="tab"] span { font-size: .85rem; }
+  .lista-pestanas { display: flex; overflow-x: auto; scrollbar-width: thin; padding-bottom: 0; }
+  .lista-pestanas [role="tab"] { flex: 0 0 auto; border-bottom: none; border-radius: var(--radio) var(--radio) 0 0; }
+  .lista-pestanas [role="tab"] span { font-size: .85rem; white-space: nowrap; }
   .lista-pestanas [role="tab"] img { width: 28px; height: 28px; }
   .panel-cabecera img { width: 64px; height: 64px; }
   .panel { padding: 1.3rem 14px 1.5rem; }
