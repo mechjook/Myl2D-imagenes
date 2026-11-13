@@ -1,6 +1,20 @@
 {
   "versiones": [
     {
+      "version": "1.3.10",
+      "fecha": "2026-11-13",
+      "notas": [
+        {
+          "titulo": "Icono de perfil Reliquia",
+          "texto": "El icono de perfil animado de la Reliquia no se veia en el menu. Ahora se ve y se mueve."
+        },
+        {
+          "titulo": "Tapete Reliquia animado",
+          "texto": "Los rayos del tapete animado brillan la mitad, para que no distraigan mientras juegas la partida."
+        }
+      ]
+    },
+    {
       "version": "1.3.9",
       "fecha": "2026-11-13",
       "notas": [
@@ -27,7 +41,9 @@
           "texto": "Los tapetes ya pueden llevar animacion. El primero es el tapete Reliquia del Dragon Dorado: cada pocos segundos el agujero negro despierta con un disco de luz que gira, rayos dorados que recorren el suelo de la sala y el humo del dragon, y despues vuelve a quedar quieto."
         }
       ]
-    },
+    }
+  ],
+  "historial": [
     {
       "version": "1.3.7",
       "fecha": "2026-11-13",
@@ -65,9 +81,7 @@
           "texto": "Las estadisticas separan tu porcentaje de victorias cuando empiezas la partida y cuando juegas segundo."
         }
       ]
-    }
-  ],
-  "historial": [
+    },
     {
       "version": "1.3.6",
       "fecha": "2026-11-12",
