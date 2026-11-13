@@ -1,6 +1,44 @@
 {
   "versiones": [
     {
+      "version": "1.3.7",
+      "fecha": "2026-11-13",
+      "notas": [
+        {
+          "titulo": "Reliquias",
+          "texto": "Llegan las Reliquias, una calidad unica de 1 de 1 que solo se recibe como regalo por el Buzon. Quien tenga alguna ve en la Coleccion un apartado propio para ellas, y el protector Reliquia trae animaciones."
+        },
+        {
+          "titulo": "Dragon Dorado",
+          "texto": "Nueva linea coleccionable con ficha, protector, icono, tapete y aura de entrada del Dragon Dorado, disponible en las cinco calidades de imagen."
+        },
+        {
+          "titulo": "Salvar de la destruccion",
+          "texto": "Ahora puedes responder antes de que una carta sea destruida o desterrada, y si la salvas se queda en juego con sus Armas. Isolda, Men-An-Tol, Aibric, Medusa, Cuchulain y Arturo ya hacen lo que dice su texto."
+        },
+        {
+          "titulo": "Guerra de Talismanes",
+          "texto": "Los Talismanes de tu mano ya se pueden jugar durante la Guerra de Talismanes. Por ejemplo, Fuego Griego destruye un Totem."
+        },
+        {
+          "titulo": "Cartas de preconstruidos",
+          "texto": "Revisamos los mazos preconstruidos: las Armas actuan sobre su portador, los efectos al bloquear funcionan, y Cangrejo Oscuro, Duque Thurk, Excalibur, Maat y Escudo de Atenea hacen lo que dicen. Las cartas que no pueden ser agrupadas se quedan en Ataque."
+        },
+        {
+          "titulo": "Ventana de respuesta",
+          "texto": "Cada opcion de la ventana de respuesta muestra la miniatura de su carta. Al pasar el raton por encima ves el recuadro con la habilidad de esa carta."
+        },
+        {
+          "titulo": "Reglas de mazo y bot",
+          "texto": "Ahora un mazo admite como maximo 6 Dracos. El bot baja sus Aliados en la Linea de Defensa, como marcan las reglas."
+        },
+        {
+          "titulo": "Estadisticas",
+          "texto": "Las estadisticas separan tu porcentaje de victorias cuando empiezas la partida y cuando juegas segundo."
+        }
+      ]
+    },
+    {
       "version": "1.3.6",
       "fecha": "2026-11-12",
       "notas": [
@@ -71,7 +109,9 @@
           "texto": "Al pasar el raton por una carta ahora sale solo el recuadro con su texto, sin tapar la mesa. Con la tecla V vuelves a la vista completa o eliges otra."
         }
       ]
-    },
+    }
+  ],
+  "historial": [
     {
       "version": "1.3.4",
       "fecha": "2026-11-09",
@@ -93,9 +133,7 @@
           "texto": "El bot ya no equipa mas de un Arma a un mismo Aliado, salvo que el texto de la carta lo permita."
         }
       ]
-    }
-  ],
-  "historial": [
+    },
     {
       "version": "1.3.3",
       "fecha": "2026-11-08",
