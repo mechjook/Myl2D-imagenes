@@ -20,16 +20,20 @@
     if (actualizarHash) subirAlPanel(document.getElementById(tab.getAttribute("aria-controls")));
   }
 
-  // AL CAMBIAR DE PESTANA SE VE EL PRINCIPIO DEL PANEL (2026-11-12, pedido del
-  // usuario): la barra de pestanas es fija, asi que desde abajo de un panel
-  // largo el siguiente (corto) quedaba por encima de la vista. Si el panel
-  // empieza por encima del borde inferior de la barra, se sube hasta ahi.
+  // AL CAMBIAR DE PESTANA LA VISTA PARTE DEL COMIENZO DEL PANEL (2026-11-12,
+  // pedido del usuario): SIEMPRE, este donde este el raton, y de golpe (sin el
+  // desplazamiento suave de la pagina, que tardaba y parecia no llegar). El
+  // panel queda justo debajo de la barra de pestanas, que es fija.
   function subirAlPanel(panel) {
     if (!panel) return;
     var nav = document.getElementById("pestanas");
     var alto = nav ? nav.getBoundingClientRect().height : 0;
-    var arriba = panel.getBoundingClientRect().top;
-    if (arriba < alto) window.scrollBy(0, arriba - alto - 8);
+    var destino = window.pageYOffset + panel.getBoundingClientRect().top - alto - 8;
+    try {
+      window.scrollTo({ top: Math.max(0, destino), behavior: "instant" });
+    } catch (e) {
+      window.scrollTo(0, Math.max(0, destino));
+    }
   }
 
   tabs.forEach(function (tab, i) {
