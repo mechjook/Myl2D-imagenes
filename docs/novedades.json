@@ -1,6 +1,24 @@
 {
   "versiones": [
     {
+      "version": "1.3.9",
+      "fecha": "2026-11-13",
+      "notas": [
+        {
+          "titulo": "Reliquia animada",
+          "texto": "La ficha, el icono de perfil y el aura de entrada de la calidad Reliquia del Dragon Dorado ya estan animados. La ficha late con su estrella y sus rayos, el icono enciende los ojos y la boca con pequenos rayos, y el aura hace pasar chispas doradas por el anillo."
+        },
+        {
+          "titulo": "Aura Reliquia",
+          "texto": "El aura Reliquia ya no gira al entrar en juego, para que se lea mejor."
+        },
+        {
+          "titulo": "Tapete Reliquia",
+          "texto": "El tapete animado se rehizo con mas resolucion. Los rayos dorados que cruzan el suelo se ven mas nitidos y el dragon queda quieto, sin vibrar."
+        }
+      ]
+    },
+    {
       "version": "1.3.8",
       "fecha": "2026-11-13",
       "notas": [
@@ -47,7 +65,9 @@
           "texto": "Las estadisticas separan tu porcentaje de victorias cuando empiezas la partida y cuando juegas segundo."
         }
       ]
-    },
+    }
+  ],
+  "historial": [
     {
       "version": "1.3.6",
       "fecha": "2026-11-12",
@@ -81,9 +101,7 @@
           "texto": "Si una actualizacion no trae imagenes nuevas, el juego ya no vuelve a cargar todas las imagenes al entrar. Ademas, cuando hay una actualizacion, te lo pregunta antes de cargarlas."
         }
       ]
-    }
-  ],
-  "historial": [
+    },
     {
       "version": "1.3.5",
       "fecha": "2026-11-10",
