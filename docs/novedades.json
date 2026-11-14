@@ -1,6 +1,58 @@
 {
   "versiones": [
     {
+      "version": "1.3.12",
+      "fecha": "2026-11-14",
+      "notas": [
+        {
+          "titulo": "Juego automatico con el cementerio rival",
+          "texto": "El juego automatico ya no se queda pegado cuando una carta, como Escarabeo, le pide elegir una carta del cementerio de tu rival."
+        },
+        {
+          "titulo": "Escudo Largo",
+          "texto": "Si el portador de Escudo Largo ataca, en la Fase Final se barajan en tu Mazo Castillo el portador y tambien el Escudo."
+        }
+      ]
+    },
+    {
+      "version": "1.3.11",
+      "fecha": "2026-11-13",
+      "notas": [
+        {
+          "titulo": "Coleccionables animados",
+          "texto": "Los tapetes, dorsos y frentes legendarios ahora tienen efectos animados: brasas, rayos, luciernagas, estrellas fugaces y destellos. En la Coleccion se ven al pasar el raton, y el tapete y el dorso Tormenta lanzan rayos."
+        },
+        {
+          "titulo": "Animar coleccionables",
+          "texto": "Nuevo ajuste en Pantalla y dentro de la partida para apagar todas las animaciones de los coleccionables si prefieres una mesa quieta."
+        },
+        {
+          "titulo": "Zonas del campo",
+          "texto": "Las zonas del campo son mas transparentes y tienen el borde marcado, asi se ve mejor el tapete. En el turno del rival sus zonas tambien dejan ver el tapete."
+        },
+        {
+          "titulo": "Partidas online y bot",
+          "texto": "En las partidas online tu rival ve tu tapete y tu ficha en la miniatura de tu campo. El bot tambien juega con cosmeticos legendarios."
+        },
+        {
+          "titulo": "Menu",
+          "texto": "Cuando hay tres o mas opciones, el menu usa listas desplegables. Ademas, al cambiar de pestana hay una transicion suave."
+        },
+        {
+          "titulo": "Cartas de Leyendas 3.0",
+          "texto": "Mas de 80 cartas de Leyendas 3.0 no tenian texto ni coste y ya los tienen. Totem de la Serpiente, Gronw Pebyr y Crom Dubh hacen ahora lo que dice su texto."
+        },
+        {
+          "titulo": "Cartas corregidas",
+          "texto": "Guerreros Egipcios, Cochero de Dracula, Nephre-Ka, Tamis, Amkh, Demonio de Tara, Totem de Equidna, Licofron, Lobos de Zeus y Los Gorilai se corrigieron para que hagan lo que dice su texto."
+        },
+        {
+          "titulo": "Juego automatico y bot",
+          "texto": "El juego automatico ya no se queda parado: el aviso de la tecla H no se come sus clics y ya no se atasca atacando con Duque Thurk sin sus Dragones. El bot saca de su mazo el Arma o Talisman que busca y pone en juego."
+        }
+      ]
+    },
+    {
       "version": "1.3.10",
       "fecha": "2026-11-13",
       "notas": [
@@ -13,7 +65,9 @@
           "texto": "Los rayos del tapete animado brillan la mitad, para que no distraigan mientras juegas la partida."
         }
       ]
-    },
+    }
+  ],
+  "historial": [
     {
       "version": "1.3.9",
       "fecha": "2026-11-13",
@@ -41,9 +95,7 @@
           "texto": "Los tapetes ya pueden llevar animacion. El primero es el tapete Reliquia del Dragon Dorado: cada pocos segundos el agujero negro despierta con un disco de luz que gira, rayos dorados que recorren el suelo de la sala y el humo del dragon, y despues vuelve a quedar quieto."
         }
       ]
-    }
-  ],
-  "historial": [
+    },
     {
       "version": "1.3.7",
       "fecha": "2026-11-13",
