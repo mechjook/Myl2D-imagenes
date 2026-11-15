@@ -1,6 +1,44 @@
 {
   "versiones": [
     {
+      "version": "1.3.14",
+      "fecha": "2026-11-15",
+      "notas": [
+        {
+          "titulo": "Cofre Mitico",
+          "texto": "Nuevo cofre en Tienda, en Cofres, pestana Miticos: trae 1 pieza Epica (85 por ciento) o Legendaria (15 por ciento) de cualquier categoria, y sale antes lo que te falta. Garantiza un Legendario como maximo cada 10 cofres. Se abre con la nueva Llave Mitica: 1 por 1.000 monedas, 5 por 4.500 o 10 por 8.500."
+        },
+        {
+          "titulo": "Canje de piezas",
+          "texto": "Nueva pestana Canje en la Tienda: entrega 5 piezas Epicas repetidas y recibe 1 Legendaria. Nunca se entrega tu ultima copia, y cuantas mas piezas pongas de una categoria, mas probable es que el Legendario sea de ella."
+        },
+        {
+          "titulo": "Abrir cofres",
+          "texto": "Al abrir uno o varios cofres, un clic en cualquier sitio retira los premios y vuelves a la Tienda en el cofre que elegiste. Antes un clic fuera de la ventana cerraba la Tienda entera. Ademas, pulsar el dibujo del cofre ya no repite la animacion sin abrir nada."
+        },
+        {
+          "titulo": "Perfil de tus amigos",
+          "texto": "Haz clic derecho sobre un amigo en el Chat para ver su perfil: nivel, partidas y victorias, logros y Reliquias. Solo lo ven tus amigos, y puedes ocultar el tuyo en Ajustes, en la seccion Cuenta."
+        },
+        {
+          "titulo": "Ayuda de la Tienda",
+          "texto": "El boton de ayuda con el signo de interrogacion ahora muestra las probabilidades del cofre que has elegido."
+        },
+        {
+          "titulo": "Protecciones en partidas online",
+          "texto": "Cuando tu rival protege una carta con Amkh, Ra o Cobra de Cripta, tu pantalla ahora lo refleja y las dos mesas coinciden. Antes un efecto como el de Sir Persival podia barajar la carta protegida solo en la mesa del rival."
+        },
+        {
+          "titulo": "Carta buscada al campo",
+          "texto": "La carta que buscas y juegas directo al campo, como Sir Persival con Escudo Tryamour, se suelta donde pulsas y ya no acaba en tu mano. Si pulsas fuera de las lineas, el Aliado sigue en el cursor hasta que lo coloques."
+        },
+        {
+          "titulo": "Lady Calvaur",
+          "texto": "Lady Calvaur ya se puede jugar y meter en un mazo sin tenerla en la Coleccion. Sigue apareciendo en Cartas promo."
+        }
+      ]
+    },
+    {
       "version": "1.3.13",
       "fecha": "2026-11-14",
       "notas": [
@@ -35,7 +73,9 @@
           "texto": "Si el portador de Escudo Largo ataca, en la Fase Final se barajan en tu Mazo Castillo el portador y tambien el Escudo."
         }
       ]
-    },
+    }
+  ],
+  "historial": [
     {
       "version": "1.3.11",
       "fecha": "2026-11-13",
@@ -73,9 +113,7 @@
           "texto": "El juego automatico ya no se queda parado: el aviso de la tecla H no se come sus clics y ya no se atasca atacando con Duque Thurk sin sus Dragones. El bot saca de su mazo el Arma o Talisman que busca y pone en juego."
         }
       ]
-    }
-  ],
-  "historial": [
+    },
     {
       "version": "1.3.10",
       "fecha": "2026-11-13",
