@@ -1,6 +1,40 @@
 {
   "versiones": [
     {
+      "version": "1.3.16",
+      "fecha": "2026-11-19",
+      "notas": [
+        {
+          "titulo": "Sonidos nuevos",
+          "texto": "Ahora suenan las pestanas y subpestanas del menu, los botones de la Tienda y del canje, el buzon, el constructor de mazos y los amigos. En partida suenan atacar, bloquear, tu turno de responder, las jugadas del rival, ganar fuerza, rebotar a la mano, descartar, cancelar una habilidad, generar Oros y barajar."
+        },
+        {
+          "titulo": "Bot: sin rival",
+          "texto": "Ahora es una mesa de practica para jugar contra un mazo fisico: al terminar tu turno sigues jugando tu. Con clic derecho en tu Mazo Castillo robas, buscas en el mazo, el cementerio o el destierro y mandas la carta a la mano, al campo, al cementerio o al destierro, botas o destierras la cantidad que escribas y barajas."
+        },
+        {
+          "titulo": "Fase Final",
+          "texto": "Las habilidades de Fase Final que piden elegir algo, o que dicen \"puedes\", ahora te preguntan y el turno espera tu respuesta."
+        },
+        {
+          "titulo": "Chat",
+          "texto": "El chat se conecta solo al entrar al juego. Antes, si alguna vez pulsabas \"Desconectar\", se quedaba desconectado para siempre."
+        },
+        {
+          "titulo": "Tienda",
+          "texto": "Al elegir un cofre ya no se ve un instante el cofre basico antes del elegido."
+        },
+        {
+          "titulo": "Orden de pago de Oros",
+          "texto": "El orden de pago de los Oros (tecla O) ya no se pierde de un turno a otro."
+        },
+        {
+          "titulo": "Cartas corregidas",
+          "texto": "Ahora hacen lo que dice su texto: Voluntad de Caballero, Berserk, Nombrado Escudero, Cuna de Dragon, Marmita Druida, Latigo y Baston, Kiya, Sobek, Espada del Abismo, Excalibur, Totem de Equidna, Corff, Conchobar, Gusano de Limerick, Caldero de la Abundancia, Magia Amatista, Cobra de Cripta, Carnero de Kush, Dario III, Caorthannach, Carmilla y Minotauro."
+        }
+      ]
+    },
+    {
       "version": "1.3.15",
       "fecha": "2026-11-17",
       "notas": [
@@ -71,7 +105,9 @@
           "texto": "Lady Calvaur ya se puede jugar y meter en un mazo sin tenerla en la Coleccion. Sigue apareciendo en Cartas promo."
         }
       ]
-    },
+    }
+  ],
+  "historial": [
     {
       "version": "1.3.13",
       "fecha": "2026-11-14",
@@ -93,9 +129,7 @@
           "texto": "La pantalla de Ajustes iba muy lenta en algunos ordenadores. Ya no se traba y responde con fluidez."
         }
       ]
-    }
-  ],
-  "historial": [
+    },
     {
       "version": "1.3.12",
       "fecha": "2026-11-14",
